@@ -1,0 +1,73 @@
+Ejercicio Entregable.  Con getters, setters y constructores.
+Alumno: Sebastian Passarini
+------------------------------------------------
+
+    public class Usuario
+    {
+        private int id { get; set; }
+        private string nombre { get; set; }
+        private string apellido { get; set; }
+        private string nombreUsuario { get; set; }
+        private string contrasenia { get; set; }
+        private string mail { get; set; }
+    }
+
+    public Usuario()
+        {
+		id = 0;
+		nombre = "";
+		apellido = "";
+		nombreUsuario = "";
+		contrasenia = "qwerty123";
+		mail = "";
+        }
+
+    public class Producto
+    {
+        private int id { get; set; }
+        private string descripcion { get; set; }
+        private double costo { get; set; }
+        private double precioVenta { get; set; }
+        private int stock { get; set; }
+        private int idUsuario { get; set; }
+        
+    }
+
+	public Producto()
+    		{
+        	 id = 0;
+        	 descripcion = "";
+        	 costo = 0f;
+        	 precioVenta = 0;
+        	 stock = 0;
+        	 idUsuario = 0;
+          }
+
+
+    public class Venta
+    {
+        private int id { get; set; }
+        private string descripcion { get; set; }
+    }
+
+	public Venta()
+	{
+	id = 0;
+	descripcion = "";
+	}
+
+    public class ProductoVendido
+    {
+        private int id { get; set; }
+        private int idProducto { get; set; }
+        private int stock { get; set; }
+        private int idVenta { get; set; }
+    }
+
+	public ProductoVendido()
+	{
+	id = 0;
+	idProducto = 0;
+	stock = 0;
+	idVenta = 0;
+	}
